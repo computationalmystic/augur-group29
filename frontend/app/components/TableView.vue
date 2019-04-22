@@ -1,4 +1,5 @@
 <template>
+<!-- Edit this to take in a date to dynamically change the table based on time parameters -->
 <div>
   <v-dialog v-model="dialog" max-width="500px">
   <v-btn slot="activator" color="primary" dark class="mb-2">New Item</v-btn>

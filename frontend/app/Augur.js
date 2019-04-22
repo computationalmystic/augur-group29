@@ -135,6 +135,7 @@ export default function Augur () {
           }
         }
       },
+	    //change this to acquire new dates based on user input
       setDates (state, payload) {
         if (payload.startDate) {
           state.startDate = new Date(payload.startDate)

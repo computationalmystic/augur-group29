@@ -1,5 +1,4 @@
 <template>
-  <div ref="holder">
     <div class="bubblechart hidefirst invis">
       <vega-interactive ref="vega" :data="values"></vega-interactive>
       <p> {{ chart }} </p>

@@ -12,6 +12,8 @@ from augur.util import annotate
 # (don't remove the above line, it's for a script)
 
 
+#After a statistic is choesen we are going to have an additional drop down menu there to select another time period than the present. After that time is chosen all currently presented metrics will be shown next to the same metrics of the Chosen time.
+
 class Facade(object):
     """Queries Facade"""
 

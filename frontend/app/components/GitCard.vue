@@ -1,25 +1,28 @@
 <template>
   <section>
     <div style="display: inline-block;">
-      <h2 style="display: inline-block; color: black !important; margin-bottom: 20px">{{ $store.state.gitRepo }}</h2>
-      <h2 style="display: inline-block;margin-bottom: 20px" class="repolisting" v-if="$store.state.comparedRepos.length > 0"> compared to: </h2>
+      <h2 style="display: inline-block; color: black !important; margin-bottom: 20px">{{ $store.state.gitRepo }}</h2>     
+<h2 style="display: inline-block;margin-bottom: 20px" class="repolisting" v-if="$store.state.comparedRepos.length > 0"> compared to: </h2>
       <h2 style="display: inline-block;margin-bottom: 20px" v-for="(repo, index) in $store.state.comparedRepos">
         <span v-bind:style="{ 'color': colors[index] }" class="repolisting"> {{ repo }} </span> 
       </h2>
     </div>
       <div class="row">
         <div class="col col-6" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <grouped-bar-chart source="cdRgTpRankedCommits"
           title="Top Repos in 2018 by Commits with Baseline Averages - Sorted"
           field="commit"></grouped-bar-chart>
         </div>
         <div class="col col-6" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <grouped-bar-chart source="cdRgTpRankedLoc"
           title="Top Repos in 2018 by Net LoC with Baseline Averages - Sorted"
           field="loc"></grouped-bar-chart>
         </div>
 
         <div class="col col-12" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <time-interval-bar-chart source="cdRepTpIntervalLocCommits"
           title="Contributions in 2018 by Monthly Intervals with Baseline Averages"
           field="loc"></time-interval-bar-chart>
@@ -32,40 +35,48 @@
         </div> -->
 
         <div class="col col-6" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <grouped-bar-chart source="cdRgNewrepRankedCommits"
           title="Top New Repos in 2018 by Commits with Baseline Averages - Sorted"
           field="commit"></grouped-bar-chart>
         </div>
         <div class="col col-6" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <grouped-bar-chart source="cdRgNewrepRankedLoc"
           title="Top New Repos in 2018 by Net LoC with Baseline Averages - Sorted"
           field="loc"></grouped-bar-chart>
         </div>
 
         <div class="col col-12">
+	  <!-- <time-parameters></time-parameters> -->
           <tick-chart></tick-chart>
         </div>
       </div>
       
       <div class="row" style="transform: translateY(-50px) !important">
         <div class="col col-6" style="padding-right: 35px">
+	  <!-- <time-parameters></time-parameters> -->
           <normalized-stacked-bar-chart title="Lines of code added by the top 10 authors as Percentages - By Time Period"></normalized-stacked-bar-chart>
         </div>
         <div class="col col-6" style="padding-left: 65px">
+	  <!-- <time-parameters></time-parameters> -->
           <div style="padding-top: 35px"></div>
           <horizontal-bar-chart type="lines" title="Average Lines of Code Per Commit"></horizontal-bar-chart>
         </div>
       </div>
       <div style="transform: translateY(-100px) !important" class="row">
         <div class="col col-6">
+	  <!-- <time-parameters></time-parameters> -->
           <one-dimensional-stacked-bar-chart type="lines" title="Lines of Code Added by the top 10 Authors as Percentages - All Time"></one-dimensional-stacked-bar-chart>
         </div>
         <div class="col col-6">
+	  <!-- <time-parameters></time-parameters>  -->
           <one-dimensional-stacked-bar-chart type="commit" title="Commits by the top 10 Authors as Percentages - All Time"></one-dimensional-stacked-bar-chart>
         </div>
       </div>
 
       <div class="row" style="transform: translateY(-50px) !important">
+	<!-- <time-parameters></time-parameters>  -->
         <lines-of-code-chart></lines-of-code-chart>
       </div>
     </div>
@@ -73,7 +84,6 @@
 </template>
 
 <script>
-
 import AugurHeader from './AugurHeader'
 import TickChart from './charts/TickChart'
 import LinesOfCodeChart from './charts/LinesOfCodeChart'
@@ -83,6 +93,7 @@ import HorizontalBarChart from './charts/HorizontalBarChart'
 import GroupedBarChart from './charts/GroupedBarChart'
 import DirectionalTimeChart from './charts/DirectionalTimeChart'
 import TimeIntervalBarChart from './charts/TimeIntervalBarChart'
+import TimeParameters from './TimeParameters'
 
 
 module.exports = {
@@ -100,7 +111,8 @@ module.exports = {
     HorizontalBarChart,
     GroupedBarChart,
     DirectionalTimeChart,
-    TimeIntervalBarChart
+    TimeIntervalBarChart,
+    TimeParameters
   }
 }
 

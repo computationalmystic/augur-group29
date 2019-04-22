@@ -1,15 +1,20 @@
 <template>
-  <div ref="chart" class="linechart"></div>
+  	<div ref="chart" class="linechart">	
+		<TimeParameters></TimeParameters>
+	</div>
 </template>
 
 
 <script>
-
+	//import TimeParameters from '../../TimeParameters'
   import AugurStats from '../../AugurStats'
   import * as d3 from 'd3'
 
   export default {
     computed : {
+	components: {
+		TimeParameters
+	},
       chart () {
         MG.data_graphic({
           title: "Missing Data",

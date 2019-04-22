@@ -11,6 +11,7 @@
     <div class="row">
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="closedIssues"
                     title="Closed Issues / Week"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/closed-issues.md"
@@ -27,6 +28,7 @@
       </div> -->
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="codeCommits"
                     title="Code Commits / Week"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/commits.md"
@@ -35,6 +37,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="codeReviewIteration"
                       title="Number of Code Review Iterations"
                       size="total"
@@ -44,6 +47,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="contributionAcceptance"
                       title="Contribution Acceptance"
                       size="total"
@@ -61,6 +65,7 @@
       </div>
  -->
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="forks"
                     title="Forks / Week"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/forks.md"
@@ -77,6 +82,7 @@
       </div>
  -->
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="maintainerResponseToMergeRequestDuration"
                       title="Time to First Maintainer Response to Merge Request"
                       size="total"
@@ -86,6 +92,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="newContributingGithubOrganizations"
                       title="New Contributing Github Organizations"
                       size="total"
@@ -104,6 +111,7 @@
       </div> -->
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="openIssues"
                     title="Open Issues / Week"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/open-issues.md"
@@ -112,6 +120,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="pullRequestComments"
                     title="Pull Request Comments / Week "
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/pull-request-comments.md"
@@ -120,6 +129,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="pullRequestsOpen"
                     title="Pull Requests Open / Week"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/pull-requests-open.md"
@@ -146,11 +156,13 @@
 import BubbleChart from './charts/BubbleChart'
 import StackedBarChart from './charts/StackedBarChart'
 import DynamicLineChart from './charts/DynamicLineChart'
+import TimeParameters from './TimeParameters'
 module.exports = {
   components: {
     BubbleChart,
     StackedBarChart,
-    DynamicLineChart
+    DynamicLineChart,
+    TimeParameters
   },
   data() {
     return {
