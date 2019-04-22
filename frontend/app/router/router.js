@@ -19,7 +19,8 @@ import Tabs from '../components/Tabs.vue'
 import TableView from '../components/TableView.vue'
 
 let routes = [
-        {path: '/', component: AugurCards,
+      //add route and component for Travis's new stuff (use case 2 baby)
+      {path: '/', component: AugurCards,
         children: [
           {
             path: "",
@@ -194,6 +195,7 @@ let routes = [
           },
         ]
       },
+      
       {path: '/groupcompare/:groupid', component: AugurCards, name: 'group', props: true, canReuse: false,
         children: [
           {
