@@ -16,6 +16,7 @@
       </div> -->
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="commitComments"
                     title="Commit Comments / Week "
                     cite-url=""
@@ -24,6 +25,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="totalCommitters"
                     title="Committers"
                     cite-url=""
@@ -33,6 +35,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="contributionAcceptance"
                     title="Contribution Acceptance Rate"
                     cite-url=""
@@ -41,6 +44,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="communityEngagement:issues_open"
                     title="Community Engagement: Open Issues"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/open-issues.md"
@@ -50,6 +54,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="communityEngagement:issues_closed_total"
                     title="Community Engagement: Closed Issues"
                     cite-url="https://github.com/augurlabs/wg-gmd/blob/master/activity-metrics/closed-issues.md"
@@ -59,6 +64,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="fakes"
                     title="Fakes"
                     cite-url=""
@@ -68,6 +74,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="newWatchers"
                     title="New Watchers / Week"
                     cite-url=""
@@ -103,6 +110,7 @@ import DynamicLineChart from './charts/DynamicLineChart'
 import BubbleChart from './charts/BubbleChart'
 import StackedBarChart from './charts/StackedBarChart'
 import DualAxisContributions from './charts/DualAxisContributions'
+import TimeParameters from './TimeParameters'
 
 module.exports = {
   data() {
@@ -114,7 +122,8 @@ module.exports = {
     DynamicLineChart,
     BubbleChart,
     StackedBarChart,
-    DualAxisContributions
+    DualAxisContributions,
+    TimeParameters
   }
 }
 

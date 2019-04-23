@@ -11,6 +11,7 @@
     <div class="row">
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="issueComments" 
                     title="Issue Comments / Week " 
                     cite-url="https://github.com/augurlabs/wg-gmd/tree/master/activity-metrics/issue-comments.md"
@@ -19,6 +20,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="pullRequestsMadeClosed" 
                     title="Pull Requests Made/ Closed per Week " 
                     cite-url="https://github.com/augurlabs/wg-gmd/tree/master/activity-metrics/pull-requests-made-closed.md"
@@ -27,6 +29,7 @@
       </div>
 
       <div class="col col-6">
+	<time-parameters></time-parameters>
         <dynamic-line-chart source="watchers" 
                     title="Watchers / Week " 
                     cite-url="https://github.com/augurlabs/wg-gmd/tree/master/activity-metrics/watchers.md"
@@ -45,6 +48,7 @@
 import DynamicLineChart from './charts/DynamicLineChart'
 import BubbleChart from './charts/BubbleChart'
 import StackedBarChart from './charts/StackedBarChart'
+import TimeParameters from './TimeParameters'
 
 module.exports = {
   data() {
