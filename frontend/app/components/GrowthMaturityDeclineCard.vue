@@ -11,9 +11,9 @@
     <div class="row">
 
       <div class="col col-6">
-	<div class="group-29">
+	<div class="group-29"
 		<time-parameters></time-parameters>
-		<compare-repos></compare-repos>
+		<repo-search-bar></repo-search-bar>
 		<color></color>
 	</div>
         <dynamic-line-chart source="closedIssues"
@@ -34,7 +34,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="codeCommits"
@@ -47,7 +47,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="codeReviewIteration"
@@ -61,7 +61,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="contributionAcceptance"
@@ -83,7 +83,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="forks"
@@ -104,7 +104,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="maintainerResponseToMergeRequestDuration"
@@ -118,7 +118,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="newContributingGithubOrganizations"
@@ -141,7 +141,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="openIssues"
@@ -154,7 +154,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="pullRequestComments"
@@ -167,7 +167,7 @@
       <div class="col col-6">
 	<div class="group-29">
                 <time-parameters></time-parameters>
-                <compare-repos></compare-repos>
+                <repo-search-bar></repo-search-bar>
 		<color></color>
         </div>
         <dynamic-line-chart source="pullRequestsOpen"
@@ -197,7 +197,7 @@ import BubbleChart from './charts/BubbleChart'
 import StackedBarChart from './charts/StackedBarChart'
 import DynamicLineChart from './charts/DynamicLineChart'
 import TimeParameters from './TimeParameters'
-import CompareRepos from './CompareRepos'
+import RepoSearchBar from './RepoSearchBar'
 import Color from './Color'
 
 module.exports = {
