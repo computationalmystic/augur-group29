@@ -206,7 +206,7 @@ module.exports = {
     StackedBarChart,
     DynamicLineChart,
     TimeParameters,
-    CompareRepos,
+    RepoSearchBar,
     Color
   },
   data() {
