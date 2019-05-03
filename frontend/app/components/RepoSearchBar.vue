@@ -20,8 +20,8 @@
 				this.isSearchBarOpen = true;
 			}, 
 			search() {
-				if (!isSearchBarOpen) {
-					openSearchBar();
+				if (!this.isSearchBarOpen) {
+					this.openSearchBar();
 				}
 				else{
 					
