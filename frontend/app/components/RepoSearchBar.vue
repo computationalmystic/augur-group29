@@ -1,7 +1,7 @@
 <template>
 	<div id="repo-search-bar">
-		<transition name="zhoop">
-			<input class="searchBar" v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
+		<transition name="zhoop" >
+			<input v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
 		</transition>
 		<button v-on:click="search">{{ computeButtonText }}</button>
 	</div>
@@ -42,9 +42,7 @@
 </script>
 
 <style scoped>
-	.searchBar{
-		width: 200px;
-	}
+	
 	
 	.zhoop-enter-active, .zhoop-leave-active{
 		transition: width 0.5s ease;
