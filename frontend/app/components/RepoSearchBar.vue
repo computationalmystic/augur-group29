@@ -1,6 +1,8 @@
 <template>
 	<div id="repo-search-bar">
-		<input v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
+		<transition name="zhoop">
+			<input v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
+		</transition>
 		<button v-on:click="search">{{ computeButtonText }}</button>
 	</div>
 </template>
@@ -38,3 +40,17 @@
 		}
 	}
 </script>
+
+<style scoped>
+	.zhoop-enter-active, .zhoop-leave-active{
+		transition: width 0.5s ease;
+	}
+	
+	.zhoop-enter, .zhoop-leave-to{
+		width: 0px;
+	}
+
+	.zhoop-leave, .zhoop-enter-to{
+		width: 200px;
+	}
+</style>
