@@ -42,6 +42,10 @@
 </script>
 
 <style scoped>
+	.searchBar{
+		width: 200px;
+	}
+	
 	.zhoop-enter-active, .zhoop-leave-active{
 		transition: width 0.5s ease;
 	}
@@ -54,7 +58,5 @@
 		width: 200px;
 	}
 
-	.searchBar{
-		width: 200px;
-	}
+	
 </style>
