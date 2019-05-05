@@ -1,7 +1,7 @@
 <template>
 	<div id="repo-search-bar">
 		<transition name="zhoop">
-			<input v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
+			<input class="searchBar" v-if="isSearchBarOpen" type="text" v-model="msg" placeholder="search repo...">
 		</transition>
 		<button v-on:click="search">{{ computeButtonText }}</button>
 	</div>
@@ -51,6 +51,10 @@
 	}
 
 	.zhoop-leave, .zhoop-enter-to{
+		width: 200px;
+	}
+
+	.searchBar{
 		width: 200px;
 	}
 </style>
