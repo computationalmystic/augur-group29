@@ -112,7 +112,7 @@ Augur is free software: you can redistribute it and/or modify it under the terms
 ## Expectations for the End
 Augur has proven to be an unruly beast and our expectation at the beginning now seem much tougher. None of of Use cases haven't reached their full fruition but it isn't for a lack of trying.
 
-Use case 1: Have buttons that will condense or expand the graph based on the time parameters. Hopefully this will be the functioning the way it was described from the beginning.
+Use case 1: Have a navbar that has given time parameters(1 week, 6 weeks, 6 months, 1 year), these are displayed as buttons.  With these buttons, you will be able to dynamically change the graph to fit the time parameter chosen.  The event handlers have the current date minus the time parameters, this gives the start date.  This start date is sent to the augur.js file to change the graph.  
 
 Use case 2: When the submit button is clicked for the repo search bar we want a second plot of lines to populate the graph. We are having trouble working on the backend on this however.
 
