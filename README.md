@@ -109,12 +109,12 @@ Augur is free software: you can redistribute it and/or modify it under the terms
 (This work has been funded through the Alfred P. Sloan Foundation)
 
 
-## Sprint 3 (Expectations for the End)
-Augur has proven to be an unruly beast and our expectation at the beginning now seem much tougher. 
+## Expectations for the End
+Augur has proven to be an unruly beast and our expectation at the beginning now seem much tougher. None of of Use cases haven't reached their full fruition but it isn't for a lack of trying.
 
 Use case 1: Have buttons that will condense or expand the graph based on the time parameters. Hopefully this will be the functioning the way it was described from the beginning.
 
 Use case 2: When the submit button is clicked for the repo search bar we want a second plot of lines to populate the graph. We are having trouble working on the backend on this however.
 
-Use case 3: On this one we are hoping to get the front end to actually work correctly so when you click the "add a time" button it will give you a scroll bar with values already inserted.
+Use case 3: On this use case we rotated between struggling to grab the correct information and presenting the grabbed information in a way that did not ruin the page. At times it seemed like we found how to at least hold on to the info that we wanted it was clear we were not retrieving it in a way that was healthy for the UI so we found ourselves repeatedly brought back to square one. 
 
